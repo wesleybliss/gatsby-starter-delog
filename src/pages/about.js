@@ -4,18 +4,29 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 const AboutPage = ({
-    data
+    data: {
+        site: {
+            siteMetadata: {
+                about: {
+                    title,
+                    description,
+                    headline,
+                    body,
+                }
+            }
+        }
+    }
 }) => {
     
     return (
         <Layout>
             <Helmet>
-                <title>About — site.about.title</title>
-                <meta name="description" content={'Admin page of ' + 'site.about.description'} />
+                <title>{title}</title>
+                <meta name="description" content={description} />
             </Helmet>
             <div className="two-grids -contact">
                 <p>@todo</p>
-                <div><pre><code>{JSON.stringify(data, null, 4)}</code></pre></div>
+                <div><pre><code>{JSON.stringify({ headline, body }, null, 4)}</code></pre></div>
             </div>
         </Layout>
     )
@@ -29,6 +40,11 @@ export const pageQuery = graphql`
         site {
             siteMetadata {
                 title
+                description
+                about {
+                    headline
+                    body
+                }
             }
         }
     }

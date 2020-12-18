@@ -14,56 +14,40 @@ collections:
         label: Config
         file: site-meta-data.json
         fields:
+          
           - widget: string
             name: title
             label: Site Title
             required: true
+          
           - widget: string
             name: siteUrl
             label: Website URL
             required: true
+          
           - widget: text
             name: description
             label: Description
             default: ''
             required: false
+          
           - widget: object
             name: home
             label: Homepage Options
             fields:
               - widget: string
-                name: title
-                label: Title
+                name: headline
+                label: Headline
                 default: ''
                 required: false
               - widget: markdown
-                name: description
-                label: Description
+                name: body
+                label: body
                 default: ''
                 required: false
-  
-  - name: pages
-    label: Pages
-    files:
-      - name: about
-        label: About
-        file: meta/about.json
-        fields:
-          - widget: string
-            name: title
-            label: Site Title
-            required: true
-          #- widget: string
-          #  name: siteUrl
-          #  label: Website URL
-          #  required: true
-          - widget: text
-            name: description
-            label: Description
-            default: ''
-            required: false
+          
           - widget: object
-            name: about
+            name: content
             label: Aboutpage Options
             fields:
               - widget: string
