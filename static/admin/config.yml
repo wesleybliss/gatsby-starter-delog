@@ -41,6 +41,42 @@ collections:
                 label: Description
                 default: ''
                 required: false
+  
+  - name: pages
+    label: Pages
+    files:
+      - name: about
+        label: About
+        file: meta/about.json
+        fields:
+          - widget: string
+            name: title
+            label: Site Title
+            required: true
+          #- widget: string
+          #  name: siteUrl
+          #  label: Website URL
+          #  required: true
+          - widget: text
+            name: description
+            label: Description
+            default: ''
+            required: false
+          - widget: object
+            name: about
+            label: Aboutpage Options
+            fields:
+              - widget: string
+                name: title
+                label: Title
+                default: ''
+                required: false
+              - widget: markdown
+                name: description
+                label: Description
+                default: ''
+                required: false
+  
   - name: blog
     label: Blog
     folder: _data/blog
