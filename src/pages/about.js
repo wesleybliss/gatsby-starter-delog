@@ -12,11 +12,12 @@ const AboutPage = ({
     return (
         <Layout>
             <Helmet>
-                <title>About — {site.about.title}</title>
-                <meta name="description" content={'Admin page of ' + site.about.description} />
+                <title>About — site.about.title</title>
+                <meta name="description" content={'Admin page of ' + 'site.about.description'} />
             </Helmet>
             <div className="two-grids -contact">
                 <p>@todo</p>
+                <div><pre><code>{JSON.stringify(site, null, 4)}</code></pre></div>
             </div>
         </Layout>
     )
