@@ -4,9 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 const AboutPage = ({
-    data: {
-        site
-    },
+    data
 }) => {
     
     return (
@@ -17,7 +15,7 @@ const AboutPage = ({
             </Helmet>
             <div className="two-grids -contact">
                 <p>@todo</p>
-                <div><pre><code>{JSON.stringify(site, null, 4)}</code></pre></div>
+                <div><pre><code>{JSON.stringify(data, null, 4)}</code></pre></div>
             </div>
         </Layout>
     )
