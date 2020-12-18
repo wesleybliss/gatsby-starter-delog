@@ -1,9 +1,13 @@
 {
   "title": "About",
   "siteUrl": "https://delog-w3layouts.netlify.com/",
-  "description": "@todo",
-  "about": {
+  "description": "@todo updateddddddd",
+  "home": {
     "title": "About",
     "description": "Testing"
+  },
+  "about": {
+    "title": "abooot test",
+    "description": "updated via cms!"
   }
 }
