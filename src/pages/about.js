@@ -12,8 +12,8 @@ const AboutPage = ({
     return (
         <Layout>
             <Helmet>
-                <title>About — {site.siteMetadata.title}</title>
-                <meta name="description" content={'Admin page of ' + site.siteMetadata.title} />
+                <title>About — {site.about.title}</title>
+                <meta name="description" content={'Admin page of ' + site.about.description} />
             </Helmet>
             <div className="two-grids -contact">
                 <p>@todo</p>
