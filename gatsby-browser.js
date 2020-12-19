@@ -1,6 +1,4 @@
-// import "./src/styles/global.scss"
-
-import "./src/styles/main.scss"
+import './src/styles/main.scss'
 
 const noop = () => {};
 const _onload = window.onload || noop;
