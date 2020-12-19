@@ -20,7 +20,7 @@ const render = (data) => (
         
         <div className="headline">{data.site.siteMetadata.home.headline}</div>
         
-        <div 
+        <div
             className="primary-content" 
             dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.home.body}}
         />

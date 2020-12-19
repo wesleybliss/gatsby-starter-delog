@@ -24,10 +24,10 @@ const AboutPage = ({
                 <title>{title}</title>
                 <meta name="description" content={description} />
             </Helmet>
-            <div className="two-grids -contact">
-                <p>@todo</p>
-                <div><pre><code>{JSON.stringify({ headline, body }, null, 4)}</code></pre></div>
-            </div>
+            <div
+                className="primary-content" 
+                dangerouslySetInnerHTML={{ __html: body}}
+            />
         </Layout>
     )
     
