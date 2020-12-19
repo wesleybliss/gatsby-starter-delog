@@ -8,11 +8,11 @@ const Section = ({ id, node: { frontmatter, html } }) => (
             <h2>{frontmatter.title}</h2>
         </header>
         
-        <div class="content">
+        <div className="content">
             
             <p dangerouslySetInnerHTML={{ __html: html }} />
             
-            <span class="image main">
+            <span className="image main">
                 {!!frontmatter.thumbnail && (
                     <img src={frontmatter.thumbnail} alt={frontmatter.title} />
                 )}

@@ -23,7 +23,7 @@ const IndexPage = ({
             {/* <HeroHeader/> */}
             
             {edges.map(({ node }, i) => (
-                <Section id={(i + 1).toString()} node={node} />
+                <Section key={node.id} id={(i + 1).toString()} node={node} />
             ))}
             
         </Layout>

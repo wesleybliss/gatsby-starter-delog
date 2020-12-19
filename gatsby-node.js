@@ -1,5 +1,12 @@
 const path = require('path')
 
+// @todo not working
+/* exports.onRenderBody = ({ setBodyAttributes }) => {
+    setBodyAttributes({
+        className: 'no-js wtfffffff'
+    })
+} */
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
     
     const { createPage } = actions
