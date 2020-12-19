@@ -8,10 +8,28 @@
         "headline": "Home headline",
         "body": "Home body content"
     },
+    "donate": {
+        "title": "Donate title",
+        "description": "Donate description",
+        "headline": "Donate headline",
+        "body": "Donate body content"
+    },
+    "fundraising": {
+        "title": "Fundraising title",
+        "description": "Fundraising description",
+        "headline": "Fundraising headline",
+        "body": "Fundraising body content"
+    },
     "about": {
         "title": "About title",
         "description": "About description",
         "headline": "About headline",
         "body": "About body content"
+    },
+    "contact": {
+        "title": "Contact title",
+        "description": "Contact description",
+        "headline": "Contact headline",
+        "body": "Contact body content"
     }
 }

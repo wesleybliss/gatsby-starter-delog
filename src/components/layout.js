@@ -26,7 +26,8 @@ export default ({ children }) => {
             <Helmet
                 bodyAttributes={{
                     class: 'scrollbar-minimal',
-                }} />
+                }}
+            />
             
             <div id="wrapper">
                 
@@ -38,6 +39,7 @@ export default ({ children }) => {
                 </header>
                 
                 <section className="intro">
+                    
                     <header>
                         <h2>The Sieb</h2>
                         <h1>
@@ -58,11 +60,13 @@ export default ({ children }) => {
                             DONATE NOW
                         </button>
                     </header>
+                    
                     <div className="content">
                         <span className="image fill" data-position="center">
                             <img src={denimPhoto} alt="" />
                         </span>
                     </div>
+                    
                 </section>
                 
                 {children}

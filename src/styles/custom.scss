@@ -1,6 +1,6 @@
 
 //
-// $$ Utilities 
+// $$ Utilities
 //
 
 .scrollbar-minimal::-webkit-scrollbar {
@@ -20,7 +20,15 @@
 }
 
 //
-// $$ Navigation 
+// $$ Defaults
+//
+
+#___gatsby {
+    height: 100vh;
+}
+
+//
+// $$ Navigation
 //
 
 header.site-header {

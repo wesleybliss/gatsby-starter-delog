@@ -2,11 +2,11 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Page from '../components/page'
 
-const AboutPage = ({
+const DonatePage = ({
     data: {
         site: {
             siteMetadata: {
-                about: {
+                donate: {
                     title,
                     description,
                     headline,
@@ -28,15 +28,15 @@ const AboutPage = ({
     
 }
 
-export default AboutPage
+export default DonatePage
 
 export const pageQuery = graphql`
-    query aboutPageQuery {
+    query donatePageQuery {
         site {
             siteMetadata {
                 title
                 description
-                about {
+                donate {
                     headline
                     body
                 }

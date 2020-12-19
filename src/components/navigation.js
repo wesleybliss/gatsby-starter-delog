@@ -10,8 +10,8 @@ export default (props) => (
             
             <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/">Donate</Link></li>
-                <li><Link to="/">Fundraising</Link></li>
+                <li><Link to="/donate">Donate</Link></li>
+                <li><Link to="/fundraising">Fundraising</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
