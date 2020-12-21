@@ -40,7 +40,7 @@ header.site-header {
     transition: all 1s ease;
     
     &.active {
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: _palette(accent); //rgba(255, 255, 255, 0.9);
         // background-color: rgb(73, 183, 252);
         /* .navigation-wrap nav.navigation:first-child {
             background-color: rgba(255, 255, 255, 0.9);
